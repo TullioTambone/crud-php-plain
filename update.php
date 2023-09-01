@@ -5,6 +5,10 @@ $pageTitle = "CRUD - Update Page";
 include __DIR__ . "/layout/top_html.php";
 
 $id = $_GET['updateid'];
+$name = $_GET['updatename'];
+$email = $_GET['updateemail'];
+$mobile = $_GET['updatemobile'];
+$password = $_GET['updatepassword'];
 // se vi sono dati da inviare
 if(isset($_POST['submit'])){
     //setto i dati da inviare
@@ -31,16 +35,16 @@ if(isset($_POST['submit'])){
     <form class="mb-3" method="post">
     
         <label for="name" class="form-label">Name</label>
-        <input type="text" class="form-control" name="name" placeholder="enter your name">
+        <input type="text" class="form-control" name="name" placeholder="enter your name" value="<?php echo $name; ?>">
 
         <label for="email" class="form-label mt-3">Email</label>
-        <input type="email" class="form-control" name="email" placeholder="abc@mail.com">
+        <input type="email" class="form-control" name="email" placeholder="abc@mail.com" value="<?php echo $email; ?>">
 
         <label for="mobile" class="form-label mt-3">Mobile</label>
-        <input type="text" class="form-control" name="mobile" placeholder="enter your number">
+        <input type="text" class="form-control" name="mobile" placeholder="enter your number" value="<?php echo $mobile; ?>">
 
         <label for="password" class="form-label mt-3">Password</label>
-        <input type="text" class="form-control" name="password" placeholder="password">
+        <input type="text" class="form-control" name="password" placeholder="password" value="<?php echo $password; ?>">
 
         <button type="submit" class="btn btn-primary mt-5" name="submit">UPDATE</button>
     </form>
