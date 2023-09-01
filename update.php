@@ -4,6 +4,7 @@ include __DIR__ . "/connect.php";
 $pageTitle = "CRUD - Update Page";
 include __DIR__ . "/layout/top_html.php";
 
+//salvo i dati nelle variabili
 $id = $_GET['updateid'];
 $name = $_GET['updatename'];
 $email = $_GET['updateemail'];

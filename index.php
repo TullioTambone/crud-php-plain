@@ -51,6 +51,7 @@ include __DIR__ . "/layout/top_html.php";
                                 </td>
                             </tr>
                             ';
+                            //ho passato nel url i dati per prenderli nella pagina di update e ritrovarmeli come valori negli input
                         }
                     }
                 ?>
