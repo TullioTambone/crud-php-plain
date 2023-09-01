@@ -19,7 +19,8 @@ if(isset($_POST['submit'])){
     $result = mysqli_query($connection,$query);
 
     if($result){
-        echo 'data inserted successfully';
+        //se va a buon fine rindirizzami alla index.php
+        header("Location: index.php");
     }else{
         die(mysqli_error($connection));
     }
@@ -47,6 +48,4 @@ if(isset($_POST['submit'])){
 
 <?php
 include __DIR__ . "/layout/bottom_html.php";
-
-
 ?>
