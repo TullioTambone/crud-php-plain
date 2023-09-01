@@ -1,3 +1,5 @@
+<!-- i'm separing the 2 parts -->
+<!-- top  -->
 <!doctype html>
 <html lang="en">
   <head>
