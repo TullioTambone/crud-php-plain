@@ -48,8 +48,8 @@ include __DIR__ . "/layout/top_html.php";
                                 <td>'. $mobile .'</td>
                                 <td>'. $password .'</td>
                                 <td>
-                                <button class="btn btn-primary"><a href="" class="text-white">Update</a></button>
-                                <button class="btn btn-danger"><a href="" class="text-white">Delete</a></button>
+                                <button class="btn btn-primary"><a href="update.php" class="text-white">Update</a></button>
+                                <button class="btn btn-danger"><a href="delete.php?deleteid='. $id .'" class="text-white">Delete</a></button>
                                 </td>
                             </tr>
                             ';
